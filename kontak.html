@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- belajar bikin web -->
+<html>
+	<head>
+		<title>Kontak Tibelat</title>
+		<meta charset="UTF-8">
+	</head>
+	
+	<body>
+	
+		<!--menu website-->
+		<div>
+			<a href="index.html">Home</a>
+			<a href="kontak.html">Kontak</a>
+		</div>
+		
+		<div>
+			<h1>Kontak Ayam Goreng dan Bakar Tibelat</h1>
+			<h2>Pilihan tepat untuk makan anda</h2>
+		</div>
+		
+		<!--membuat form-->
+		<form>
+		<fieldset>
+			<legend>Nama dan Pesan</legend>
+			<label for="nama">Nama</label>
+			<input type="text" placeholder="Nama Anda" value="Nama anda" id="nama"><br>
+			<label for="pesan">Pesan</label>
+			<textarea cols="100" rows="7" id="pesan">pesan saya adalah</textarea>
+		</fieldset>
+			<br><br>
+		<fieldset>
+			<legend>Pilihan data</legend>
+			<label>Hobi</label> <br>
+			<input type="checkbox" name="hobi_user" value="0">Menggambar <br>
+			<input type="checkbox" name="hobi_user" value="1">Menulis <br>
+			<input type="checkbox" name="hobi_user" value="2">Melukis
+			<br><br>
+			<label>Gender</label> <br>
+			<input type="radio" name="gender" value="0">Man <br>
+			<input type="radio" name="gender" value="1">Women <br>
+			<label>Pelajaran</label>
+			<select>
+				<optgroup label="Frontend">
+					<option value="html">html</option>
+					<option value="css">css</option>
+				
+				<optgroup label="Backend">
+					<option value="php">php</option>
+					<option value="db">database</option>
+			</select>
+			<br>
+			<input type="submit" value="Kirim Data">
+		</fieldset>	
+		</form>
+		
+		 <br><br>
+		<!--bikin tabel-->
+		<table border="1">
+			<caption>Daftar Karyawan Tibelat</caption>
+			<tr>
+				<th>Nama Karyawan</th>
+				<th>Kota Asal</th>
+			</tr>
+			<tr>
+				<td>Isan</td>
+				<td>Bandung</td>
+			</tr>
+			<tr>
+				<td>Ijal</td>
+				<td>Subang</td>
+			</tr>
+		</table>
+		<!--unorderlist di html-->
+		<ul>
+			<li>Isan</li>
+			<li>Ijal</li>
+		</ul>
+		<!--order list-->
+		<ol>
+			<li>Isan</li>
+			<li>Ijal</li>
+		</ol>
+		<!--data list-->
+		<!--buat yang ada deskripsinya-->
+		<dl>
+			<dt>Isan</dt>
+			<dd>Karyawan ke 1</dd>
+			
+			<dt>Ijal</dt>
+			<dd>Karyawan ke 2</dd>
+		</dl>
+		<p>&copy; Tibelat 2017</p>
+	</body>
+</html>
