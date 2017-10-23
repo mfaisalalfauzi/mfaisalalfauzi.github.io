@@ -1,9 +1,7 @@
-#menu_web{
+.menu{
   color: #39d824;
 }
-.menu{
-  color: blue;
-}
+
 h2{
  color    : red;
  font-size: 30px;
