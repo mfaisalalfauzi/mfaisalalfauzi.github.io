@@ -2,11 +2,11 @@
 <!-- belajar bikin web -->
 <html>
 	<head>
-		<title>The Lodge Maribaya</title>
+		<title>Pariwisata Kota Bandung</title>
 		<meta charset="UTF-8">
-		<link rel="stylesheet" href="bootstrap.css">
-		<link rel="stylesheet" href="bootstrap-theme.css">
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.css">
+		<link rel="stylesheet" href="css/themes.css">
 	</head>
 
 	<!-- css
@@ -17,29 +17,103 @@
 
 	<body>
 	<!--menu website-->
-		<div id="menu_web">
-			<table>
-				<a href="index.html"  class="menu">Home</a>
-				<a href="kontak.html" class="menu">Kontak</a>
-				<a href="about.html" class="menu">About</a>
-		    </table>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+		  <!-- Brand and toggle get grouped for better mobile display -->
+		  <div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			  <span class="sr-only">Toggle navigation</span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Info Pariwisata Bandung</a>
+		  </div>
+	  
+		  <!-- Collect the nav links, forms, and other content for toggling -->
+		  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+			  <li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+			  <li><a href="kontak.html">Kontak</a></li>
+			  <li><a href="about.html">About</a></li>
+			</ul>
+			<form class="navbar-form navbar-right">
+			  <div class="form-group">
+				<input type="text" class="form-control" placeholder="Search">
+			  </div>
+			  <button type="submit" class="btn btn-default">Submit</button>
+			</form>
+			<ul class="nav navbar-nav navbar-right">
+			  <li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+				<ul class="dropdown-menu">
+				  <li><a href="#">Action</a></li>
+				  <li><a href="#">Another action</a></li>
+				  <li><a href="#">Something else here</a></li>
+				  <li role="separator" class="divider"></li>
+				  <li><a href="#">Separated link</a></li>
+				</ul>
+			  </li>
+			</ul>
+		  </div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+		</nav>
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			</ol>
+		
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<img src="img/bukit1.png" alt="..." width="100%" height="80px">
+					<div class="carousel-caption">
+						apa nih?
+					</div>
+				</div>
+				<div class="item">
+					<img src="kawah1.jpg" alt="...">
+					<div class="carousel-caption">
+						...
+					</div>
+				</div>
+				...
+			</div>
+		
+			<!-- Controls -->
+			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
 		</div>
-
 		<div>
-			<h1>The Lodge Maribaya</h1>
-		</div>
-
-		<div>
-			<p>The lodge Maribaya is a tourist destination offering camping, team building, trekking activities in beautiful natural surroundings close to pine forest. The lodge situated about 5km east off Maribaya waterfalls, another local tourist attractions close to the city of Bandung, and at an altitude of more than 1000m above sea level.<br>
-				
-				Beyond the pine forests around the Lodge, a vista of wonderful mountain scenery may be seen in every direction. Close to and below The lodge flows the upper Cikapundung river, on its way to Maribaya water falls, while the air in the locality is cool and fresh, with invigorating breezes.<br>
-				
-				The Lodge Maribaya is equipped to support a multitude of activities and will appeal to families, companies and
-				other groups. Adrenaline-pumping activities such as trekking through the forest, camping, flyng fox and fun games are but few examples. The location is also available for private parties such as weddings, birthday celebrations,social and other gatherings.<br>
-				
-				In addition to its beautiful scenery and natural surroundings, The lodge has providing sundanese traditional menu  "Dapur Hawu" and the other "The Pines" serving international light meals, coffee and tea.</p>
-		</div>
-		<script src="jquery.min.js"></script>
-		<script src="bootstrap.js"></script>
+			<h1>Wisata Kota Bandung</h1>
+			<!-- Stack the columns on mobile by making one full-width and the other half-width -->
+			<div class="row">
+			  <div class="col-xs-12 col-md-12">.col-xs-12 .col-md-8</div>
+			  <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+			</div>
+			
+			<!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+			<div class="row">
+			  <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+			  <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+			  <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+			</div>
+			
+			<!-- Columns are always 50% wide, on mobile and desktop -->
+			<div class="row">
+			  <div class="col-xs-6">.col-xs-6</div>
+			  <div class="col-xs-6">.col-xs-6</div>
+			</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.js"></script>
 	</body>
 </html>
