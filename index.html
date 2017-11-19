@@ -19,9 +19,10 @@
 	 -->
 
 	<body>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 		<div><img src="img/baner2.jpg" alt="" class="img-responsive"></div>
 	<!--menu website-->
-	<nav class="navbar navbar-inverse">
+	<nav class="navbar navbar-inverse" style="margin-bottom:0px;">
 		<div class="container-fluid">
 		  <!-- Brand and toggle get grouped for better mobile display -->
 		  <div class="navbar-header">
@@ -98,19 +99,47 @@
 				<span class="sr-only">Next</span>
 			</a>
 		</div>
-		<p>Date: <input type="text" id="datepicker" value=""></p>
-
+		<form align="center" class="form-inline">
+				<div class="row col-xs-12 col-md-12 form-group"><label for="datepicker">Tanggal Pemesanan Tiket</label>
+					<input type="text" id="datepicker" value="" class="form-control" placeholder="Date">
+					<button type="submit" class="btn btn-primary">Pesan</button>
+				</div>
+		</form>
+		<div class="row col-xs-12 col-md-12">
+			<h1 align="center">ZONA</h1>
+		</div>
 <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
 <div class="row">
-  <div class="col-xs-12 col-md-4"><img src="img/museum1.jpg" alt="" class="img-responsive"></div>
-  <div class="col-xs-6 col-md-4"><img src="img/museum2.jpg" alt="" class="img-responsive"></div>
-  <div class="col-xs-6 col-md-4"><img src="img/museum3.jpg" alt="" class="img-responsive"></div>
+		<div class="container col-xs-12 col-md-4">
+			<img src="img/gambar8.jpeg" alt="" class="image img-responsive">
+			<div class="middle">
+				<a href="#"><div class="text"><b>Zona Kota</b></div></a>
+			</div>
+		</div>
+		<div class="container col-xs-12 col-md-4">
+				<img src="img/gambar1.jpeg" alt="" class="image img-responsive">
+				<div class="middle">
+					<a href="#"><div class="text"><b>Zona Air</b></div></a>
+				</div>
+		</div>
+		<div class="container col-xs-12 col-md-4">
+				<img src="img/gambar4.jpeg" alt="" class="image img-responsive">
+				<div class="middle">
+					<a href="#"><div class="text"><b>Zona Gunung</b></div></a>
+				</div>
+		</div>	
+ </div>
+<div class="row col-xs-12 col-md-12">
+	<h1 align="center">Taman Lalu Lintas</h1>
 </div>
 
 <!-- Columns are always 50% wide, on mobile and desktop -->
 <div class="row">
-  <div class="col-xs-6"><img src="img/museum4.jpg" alt="" width="100%" padding="0"></div>
-  <div class="col-xs-6"><img src="img/museum5.jpg" alt="" width="100%"></div>
+  <div class="col-xs-8"><img src="img/gambar10.jpeg" alt="" width="100%" padding="0"></div>
+  <div class="col-xs-4"><p>Taman seluas 3.5 Ha ini di dalamnya terdapat ± 1000 pohon dan banyak taman bunga, termasuk banyak pohon langka yang tetap kami rawat dan dilestarikan keberadaannya, karena begitu besar manfaatnya bagi kenyamanan lingkungan hidup dan kesehatan masyarakat Kota Bandung khususnya dan masyarakat Jawa Barat pada umumnya.</p></div>
+</div>
+<div id="footer" class="col-xs-12">
+	Copyright &copy; 2017 - Muhammad Faisal Al Fauzi. All right reserved
 </div>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -140,5 +169,23 @@
 	
 	
 		</script>
+		<script>
+				// When the user scrolls down 20px from the top of the document, show the button
+				window.onscroll = function() {scrollFunction()};
+				
+				function scrollFunction() {
+					if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+						document.getElementById("myBtn").style.display = "block";
+					} else {
+						document.getElementById("myBtn").style.display = "none";
+					}
+				}
+				
+				// When the user clicks on the button, scroll to the top of the document
+				function topFunction() {
+					document.body.scrollTop = 0;
+					document.documentElement.scrollTop = 0;
+				}
+				</script>
 	</body>
 </html>
