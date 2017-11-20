@@ -1,194 +1,191 @@
-<!DOCTYPE html>
-<!-- belajar bikin web -->
-<html>
-	<head>
-		<title>Taman Lalu Lintas</title>
-		<meta charset="UTF-8">
+	<!DOCTYPE html>
+	<!-- belajar bikin web -->
+	<html>
+		<head>
+			<title>Taman Lalu Lintas</title>
+			<meta charset="UTF-8">
 
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-		<link rel="stylesheet" href="css/themes.css">
-		<link rel="stylesheet" href="css/bootstrap.css">
-		<link rel="stylesheet" href="css/bootstrap-themes.css">
-		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-		
-	</head>
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+			<link rel="stylesheet" href="css/themes.css">
+			<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+			
+		</head>
 
-	<!-- css
-		 1.inline: langsung pada tag
-		 2.internal: file html yang sama
-		 3.external: file css sendiri
-	 -->
+		<!-- css
+			1.inline: langsung pada tag
+			2.internal: file html yang sama
+			3.external: file css sendiri
+		-->
 
-	<body>
-		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-		<div><img src="img/baner2.jpg" alt="" class="img-responsive" width="100%"></div>
-	<!--menu website-->
-	<nav class="navbar navbar-default" style="margin-bottom:0px;">
-		<div class="container-fluid">
-		  <!-- Brand and toggle get grouped for better mobile display -->
-		  <div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-			  <span class="sr-only">Toggle navigation</span>
-			  <span class="icon-bar"></span>
-			  <span class="icon-bar"></span>
-			  <span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="#">Taman Lalu Lintas</a>
-		  </div>
-	  
-		  <!-- Collect the nav links, forms, and other content for toggling -->
-		  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav">
-			  <li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
-			  <li><a href="#">Event</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		<!--	<ul class="nav navbar-nav navbar-right">
-				<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-				<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-			</ul>-->
-			</div><!-- /.navbar-collapse -->
-		</div><!-- /.container-fluid -->
-		</nav>
-		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" item-width="100%">
-			<!-- Indicators -->
-			<ol class="carousel-indicators">
-				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-				<li data-target="#carousel-example-generic" data-slide-to="3"></li>
-				<li data-target="#carousel-example-generic" data-slide-to="4"></li>
-				<li data-target="#carousel-example-generic" data-slide-to="5"></li>
-			</ol>
-		
-			<!-- Wrapper for slides -->
-			<div class="carousel-inner" role="listbox">
-				<div class="item active">
-					<img src="img/slider/slider.jpg" alt="..." class="img-responsive" width="100%">
-					<div class="carousel-caption"></div>
-				</div>
-				<div class="item">
-					<img src="img/slider/slider2.jpg" alt="..." class="img-responsive" width="100%">
-					<div class="carousel-caption"></div>
-				</div>
-				<div class="item">
-					<img src="img/slider/slider3.jpg" alt="..." class="img-responsive" width="100%">
-					<div class="carousel-caption"></div>
-				</div>
-				<div class="item">
-					<img src="img/slider/slider4.jpg" alt="..." class="img-responsive" width="100%">
-					<div class="carousel-caption"></div>
-				</div>
-				<div class="item">
-					<img src="img/slider/slider5.jpg" alt="..." class="img-responsive" width="100%">
-					<div class="carousel-caption"></div>
-				</div>
-				<div class="item">
-					<img src="img/slider/slider6.jpg" alt="..." class="img-responsive" width="100%">
-					<div class="carousel-caption"></div>
-				</div>
+		<body>
+			<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+			<div><img src="img/baner2.jpg" alt="" class="img-responsive" width="100%"></div>
+		<!--menu website-->
+		<nav class="navbar navbar-inverse" style="margin-bottom:0px;">
+			<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Taman Lalu Lintas</a>
 			</div>
 		
-			<!-- Controls -->
-			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			</a>
-		</div>
-		<form align="center" class="form-inline">
-				<div class="row col-xs-12 col-md-12 form-group"><label for="datepicker">Tanggal Pemesanan Tiket</label>
-					<input type="text" id="datepicker" value="" class="form-control" placeholder="Date">
-					<button type="submit" class="btn btn-primary">Pesan</button>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+				<li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+				<li><a href="#">Event</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			<!--	<ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+				</ul>-->
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+			</nav>
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" item-width="100%">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="5"></li>
+				</ol>
+			
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="img/slider/slider.jpg" alt="..." class="img-responsive" width="100%">
+						<div class="carousel-caption"></div>
+					</div>
+					<div class="item">
+						<img src="img/slider/slider2.jpg" alt="..." class="img-responsive" width="100%">
+						<div class="carousel-caption"></div>
+					</div>
+					<div class="item">
+						<img src="img/slider/slider3.jpg" alt="..." class="img-responsive" width="100%">
+						<div class="carousel-caption"></div>
+					</div>
+					<div class="item">
+						<img src="img/slider/slider4.jpg" alt="..." class="img-responsive" width="100%">
+						<div class="carousel-caption"></div>
+					</div>
+					<div class="item">
+						<img src="img/slider/slider5.jpg" alt="..." class="img-responsive" width="100%">
+						<div class="carousel-caption"></div>
+					</div>
+					<div class="item">
+						<img src="img/slider/slider6.jpg" alt="..." class="img-responsive" width="100%">
+						<div class="carousel-caption"></div>
+					</div>
 				</div>
-		</form>
-		<div class="row col-xs-12 col-md-12">
-			<h1 align="center">ZONA</h1>
-		</div>
-<!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
-<div class="row">
-		<div class="container col-xs-12 col-md-4">
-			<img src="img/gambar8.jpeg" alt="" class="image img-responsive">
-			<div class="middle">
-				<a href="#"><div class="text"><b>Zona Kota</b></div></a>
+			
+				<!-- Controls -->
+				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
 			</div>
-		</div>
-		<div class="container col-xs-12 col-md-4">
-				<img src="img/gambar1.jpeg" alt="" class="image img-responsive">
+			<form align="center" class="form-inline">
+					<div class="row col-xs-12 col-md-12 form-group"><label for="datepicker">Tanggal Pemesanan Tiket</label>
+						<input type="text" id="datepicker" value="" class="form-control" placeholder="Date">
+						<button type="submit" class="btn btn-primary">Pesan</button>
+					</div>
+			</form>
+			<div class="row col-xs-12 col-md-12">
+				<h1 align="center">ZONA</h1>
+			</div>
+	<!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+	<div class="row">
+			<div class="container col-xs-12 col-md-4">
+				<img src="img/gambar8.jpeg" alt="" class="image img-responsive">
 				<div class="middle">
-					<a href="#"><div class="text"><b>Zona Air</b></div></a>
+					<a href="#"><div class="text"><b>Zona Kota</b></div></a>
 				</div>
-		</div>
-		<div class="container col-xs-12 col-md-4">
-				<img src="img/gambar4.jpeg" alt="" class="image img-responsive">
-				<div class="middle">
-					<a href="#"><div class="text"><b>Zona Gunung</b></div></a>
-				</div>
-		</div>	
- </div>
-<div class="row col-xs-12 col-md-12">
-	<h1 align="center">Taman Lalu Lintas</h1>
-</div>
+			</div>
+			<div class="container col-xs-12 col-md-4">
+					<img src="img/gambar1.jpeg" alt="" class="image img-responsive">
+					<div class="middle">
+						<a href="#"><div class="text"><b>Zona Air</b></div></a>
+					</div>
+			</div>
+			<div class="container col-xs-12 col-md-4">
+					<img src="img/gambar4.jpeg" alt="" class="image img-responsive">
+					<div class="middle">
+						<a href="#"><div class="text"><b>Zona Gunung</b></div></a>
+					</div>
+			</div>	
+	</div>
+	<div class="row col-xs-12 col-md-12">
+		<h1 align="center">Taman Lalu Lintas</h1>
+	</div>
 
-<!-- Columns are always 50% wide, on mobile and desktop -->
-<div class="row">
-  <div class="col-xs-8"><img src="img/gambar10.jpeg" alt="" width="100%" padding="0"></div>
-  <div class="col-xs-4"><p>Taman seluas 3.5 Ha ini di dalamnya terdapat ± 1000 pohon dan banyak taman bunga, termasuk banyak pohon langka yang tetap kami rawat dan dilestarikan keberadaannya, karena begitu besar manfaatnya bagi kenyamanan lingkungan hidup dan kesehatan masyarakat Kota Bandung khususnya dan masyarakat Jawa Barat pada umumnya.</p></div>
-</div>
-<div id="footer" class="col-xs-12">
-	Copyright &copy; 2017 - Muhammad Faisal Al Fauzi. All right reserved
-</div>
-		<script src="js/bootstrap.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-		<script>
-	
-		$(document).ready(function(){
-			// Datepicker
-			$('#datepicker').datepicker({
-					dateFormat: 'dd-mm-yy',
-					inline: true,
-	/*        minDate: new Date(2017, 1 - 1, 1),
-					maxDate:new Date(2017, 12 - 1, 31),*/
-					altField: '#datepicker_value',
-					onSelect: function(){
-							var day1 = $("#datepicker").datepicker('getDate').getDate();                 
-							var month1 = $("#datepicker").datepicker('getDate').getMonth() + 1;             
-							var year1 = $("#datepicker").datepicker('getDate').getFullYear();
-							var fullDate = year1 + "-" + month1 + "-" + day1;
-							var str_output = "<h1><center><img src=\"/images/a" + fullDate +".png\"></center></h1><br/><br>";
-							$('#page_output').html(str_output);
-						
+	<!-- Columns are always 50% wide, on mobile and desktop -->
+	<div class="row">
+	<div class="col-xs-8"><img src="img/gambar10.jpeg" alt="" width="100%" padding="0"></div>
+	<div class="col-xs-4"><p>Taman seluas 3.5 Ha ini di dalamnya terdapat ± 1000 pohon dan banyak taman bunga, termasuk banyak pohon langka yang tetap kami rawat dan dilestarikan keberadaannya, karena begitu besar manfaatnya bagi kenyamanan lingkungan hidup dan kesehatan masyarakat Kota Bandung khususnya dan masyarakat Jawa Barat pada umumnya.</p></div>
+	</div>
+	<div id="footer" class="col-xs-12">
+		Copyright &copy; 2017 - Muhammad Faisal Al Fauzi. All right reserved
+	</div>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+			<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+			<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+			<script>
+		
+			$(document).ready(function(){
+				// Datepicker
+				$('#datepicker').datepicker({
+						dateFormat: 'dd-mm-yy',
+						inline: true,
+		/*        minDate: new Date(2017, 1 - 1, 1),
+						maxDate:new Date(2017, 12 - 1, 31),*/
+						altField: '#datepicker_value',
+						onSelect: function(){
+								var day1 = $("#datepicker").datepicker('getDate').getDate();                 
+								var month1 = $("#datepicker").datepicker('getDate').getMonth() + 1;             
+								var year1 = $("#datepicker").datepicker('getDate').getFullYear();
+								var fullDate = year1 + "-" + month1 + "-" + day1;
+								var str_output = "<h1><center><img src=\"/images/a" + fullDate +".png\"></center></h1><br/><br>";
+								$('#page_output').html(str_output);
+							
+						}
+				});
+		});
+		
+		
+			</script>
+			<script>
+					// When the user scrolls down 20px from the top of the document, show the button
+					window.onscroll = function() {scrollFunction()};
+					
+					function scrollFunction() {
+						if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+							document.getElementById("myBtn").style.display = "block";
+						} else {
+							document.getElementById("myBtn").style.display = "none";
+						}
 					}
-			});
-	});
-	
-	
-		</script>
-		<script>
-				// When the user scrolls down 20px from the top of the document, show the button
-				window.onscroll = function() {scrollFunction()};
-				
-				function scrollFunction() {
-					if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-						document.getElementById("myBtn").style.display = "block";
-					} else {
-						document.getElementById("myBtn").style.display = "none";
+					
+					// When the user clicks on the button, scroll to the top of the document
+					function topFunction() {
+						document.body.scrollTop = 0;
+						document.documentElement.scrollTop = 0;
 					}
-				}
-				
-				// When the user clicks on the button, scroll to the top of the document
-				function topFunction() {
-					document.body.scrollTop = 0;
-					document.documentElement.scrollTop = 0;
-				}
-				</script>
-	</body>
-</html>
+					</script>
+		</body>
+	</html>
