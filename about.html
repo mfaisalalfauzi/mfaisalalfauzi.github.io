@@ -1,70 +1,93 @@
 <!DOCTYPE html>
 <!-- belajar bikin web -->
 <html>
-		<head>
-				<title>Pariwisata Kota Bandung</title>
-				<meta charset="UTF-8">
-				<link rel="stylesheet" href="css/bootstrap.css">
-				<link rel="stylesheet" href="css/bootstrap-theme.css">
-				<link rel="stylesheet" href="css/themes.css">
-			</head>
-			
-			<body>
-			
-				<!--menu website-->
-			<nav class="navbar navbar-inverse">
-					<div class="container-fluid">
-					  <!-- Brand and toggle get grouped for better mobile display -->
-					  <div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-						  <span class="sr-only">Toggle navigation</span>
-						  <span class="icon-bar"></span>
-						  <span class="icon-bar"></span>
-						  <span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand" href="#">Info Pariwisata Bandung</a>
-					  </div>
-				  
-					  <!-- Collect the nav links, forms, and other content for toggling -->
-					  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						<ul class="nav navbar-nav">
-						  <li><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
-						  <li><a href="kontak.html">Kontak</a></li>
-						  <li class="active"><a href="about.html">About</a></li>
-						</ul>
-						<form class="navbar-form navbar-right">
-						  <div class="form-group">
-							<input type="text" class="form-control" placeholder="Search">
-						  </div>
-						  <button type="submit" class="btn btn-default">Submit</button>
-						</form>
-						<ul class="nav navbar-nav navbar-right">
-						  <li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-							<ul class="dropdown-menu">
-							  <li><a href="#">Action</a></li>
-							  <li><a href="#">Another action</a></li>
-							  <li><a href="#">Something else here</a></li>
-							  <li role="separator" class="divider"></li>
-							  <li><a href="#">Separated link</a></li>
-							</ul>
-						  </li>
-						</ul>
-					  </div><!-- /.navbar-collapse -->
-					</div><!-- /.container-fluid -->
-				  </nav>
+	<head>
+		<title>Taman Lalu Lintas</title>
+		<meta charset="UTF-8">
 
-		<div>
-			<h1>About Me</h1>
-			<h2>Muhammad Faisal Al Fauzi</h2>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/themes.css">
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		
+	</head>
+
+	<!-- css
+		1.inline: langsung pada tag
+		2.internal: file html yang sama
+		3.external: file css sendiri
+	-->
+
+	<body>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+		<!--menu website-->
+	<nav class="navbar navbar-inverse" style="margin-bottom:0px;">
+		<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="index.html">Taman Lalu Lintas</a>
 		</div>
-
-		<div>
-			<p>Halo nama saya Muhammad Faisal Al Fauzi</p>
-			<a href="https://facebook.com" target="_blank">website facebook</a>
-			<img src="Desert.jpg" alt="gambar desert" height="100" width="100">
-		</div>
-
+	
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">Event</a></li>
+			<li class="active"><a href="about.html">About<span class="sr-only">(current)</span></a></li>
+			<li><a href="kontak.html">Contact</a></li>
+			</ul>
+		<!--	<ul class="nav navbar-nav navbar-right">
+				<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+			</ul>-->
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+		</nav>
+<h1 align="center">Contact Us</h1>
+<form class="form-horizontal">
+	<div class="form-group">
+    <label for="inputfname" class="col-sm-2 control-label">First Name</label>
+    <div class="col-sm-8">
+      <input type="text" class="form-control" id="inputfname" placeholder="Your First Name...">
+    </div>
+	</div>
+	<div class="form-group">
+    <label for="inputlname" class="col-sm-2 control-label">Last Name</label>
+    <div class="col-sm-8">
+      <input type="text" class="form-control" id="inputlname" placeholder="Your Last Name...">
+    </div>
+	</div>
+	<div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-8">
+      <input type="email" class="form-control" id="inputemail" placeholder="Your Email...">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputmessages" class="col-sm-2 control-label">Messages</label>
+    <div class="col-sm-8">
+      <textarea class="form-control" id="inputmessages" rows="3" placeholder="Your messages..."></textarea>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Submit</button>
+    </div>
+  </div>
+</form>
+<div id="footer" class="col-xs-12">
+	Copyright &copy; 2017 - Muhammad Faisal Al Fauzi. All right reserved
+</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 	</body>
 </html>
