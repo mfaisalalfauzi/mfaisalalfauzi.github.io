@@ -9,9 +9,37 @@
 
 			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-			<link rel="stylesheet" href="css/themes.css">
 			<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-			
+			<link rel="stylesheet" href="css/themes.css">
+			<style>
+				@font-face{
+  					font-family: "Mohave";
+  					src: url('MOHAVE.OTF');
+				}
+				.cust-navbar{
+ 					font-family: "Mohave";
+  					background: #cbd6b6;
+  					border: 0;
+					text-decoration-color: white;
+				}
+				.colorme{
+					color: white;
+				}
+				@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+	.navbar-brand {
+	position:absolute;
+	}
+}
+			</style>
 		</head>
 
 		<!-- css
@@ -22,7 +50,7 @@
 
 		<body>
 			<!--menu website-->
-		<nav class="navbar navbar-inverse" style="margin-bottom:0px;">
+		<nav class="navbar cust-navbar" style="margin-bottom:0px;">
 			<div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
@@ -32,18 +60,18 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="index.html">Taman Lalu Lintas</a>
+				<a class="navbar-brand colorme" href="index.html">Taman Lalu Lintas</a>
 			</div>
 		
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-				<li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
-				<li><a href="event.html">Event</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="kontak.html">Contact</a></li>
+					<li class="active colorme"><a href="index.html" class="colorme">Home<span class="sr-only">(current)</span></a></li>
+					<li><a href="event.html" class="colorme">Event</a></li>
+					<li><a href="about.html" class="colorme">About</a></li>
+					<li><a href="kontak.html" class="colorme">Contact</a></li>
 				</ul>
-				<ul class="nav navbar-nav navbar-right">
+				<ul class="nav navbar-nav">
 					<li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
 					<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
 				</ul>
