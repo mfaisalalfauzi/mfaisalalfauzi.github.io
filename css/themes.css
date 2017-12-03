@@ -33,6 +33,9 @@
 }
 .container {
   position: relative;
+  background-color: #F8E6BA;
+  padding-bottom: 10%;
+  padding-top: 5%;
 }
 
 .image {
@@ -72,3 +75,58 @@ padding: 16px 32px;
 .paraghrap {
   margin-left: 100px
 }
+@font-face{
+  font-family: "Mohave";
+  src: url('MOHAVE.OTF');
+}
+body{
+  
+  background-color: #e7b416;
+  font-family: "Mohave";
+}
+h2{
+  color: #cc3232
+}
+.kotak1{
+  background-color: #E49667;
+  
+  border: 1px solid white;
+  padding: 45px;
+  
+  position: relative;
+}
+.kotak2{
+  background-color: #CFD06C;
+  
+  border: 1px solid white;
+  padding: 45px;
+  
+  position: relative;
+}
+.kotak3{
+  background-color: #9EC7BC;
+  
+  border: 1px solid white;
+  padding: 45px;
+  
+  position: relative;
+}
+#kotak{
+  color: white;
+  text-align: center;
+  margin-top: 0px;
+
+}
+.text-bawah {
+  background-color: white;
+  color: #E49667;
+  font-size: 16px;
+  padding: 16px 20px;
+  text-align: center;
+  }
+  .icon{
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+  }
+  

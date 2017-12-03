@@ -18,26 +18,40 @@
 				}
 				.cust-navbar{
  					font-family: "Mohave";
-  					background: #cbd6b6;
+  					background: #DCDDDD;
   					border: 0;
-					text-decoration-color: white;
+					
 				}
 				.colorme{
 					color: white;
+					height: 55px;
 				}
 				@media (min-width: 768px) {
     .navbar .navbar-nav {
         display: inline-block;
         float: none;
         vertical-align: top;
-    }
+		
+	}
+	.navbar-default .navbar-nav>li>a{
+		background-color: #cbd6b6;
+		color: white;
+	}
+	.navbar-default .navbar-nav > .active >a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+		background-color: #99c140 !important;
+		color: white;
+		background-image: none;
+	}
 
     .navbar .navbar-collapse {
         text-align: center;
-    }
-	.navbar-brand {
-	position:absolute;
+		
 	}
+	 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+		background-color: #99c140;
+		color: white;
+	}
+	
 }
 			</style>
 		</head>
@@ -50,7 +64,7 @@
 
 		<body>
 			<!--menu website-->
-		<nav class="navbar cust-navbar" style="margin-bottom:0px;">
+		<nav class="navbar cust-navbar navbar-default" style="margin-bottom:0px;">
 			<div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
@@ -59,25 +73,49 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand colorme" href="index.html">Taman Lalu Lintas</a>
+				</button>				
 			</div>
-		
+		<style>
+			.navbar-default .navbar-toggle{
+				background-color: #99c140;
+			}
+		.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+		background-color: #DCDDDD;
+	}
+	.navbar-default .navbar-nav>li>a{
+		background-color: #cbd6b6;
+	}
+	.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+		color: white;
+		background-color: #99c140;
+		background-image: none;
+	}
+	.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+		color: white;
+		background-color: #99c140;
+	}
+	</style>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li class="active colorme"><a href="index.html" class="colorme">Home<span class="sr-only">(current)</span></a></li>
-					<li><a href="event.html" class="colorme">Event</a></li>
-					<li><a href="about.html" class="colorme">About</a></li>
-					<li><a href="kontak.html" class="colorme">Contact</a></li>
+					<li class="active"><a href="index.html" class="colorme">Home<span class="sr-only">(current)</span></a></li>
+					<li><a href="history.html" class="colorme">History</a></li>
+					<li><a href="atraction.html" class="colorme">Atraction</a></li>
+					<li><a href="whatson.html" class="colorme">What's On</a></li>
+					<li><a href="plan.html" class="colorme">Plan Your Visit</a></li>
+					<li><a href="merch.html" class="colorme">Merchandise</a></li>
+					<li><a href="edu.html" class="colorme">Education</a></li>
+					<li><a href="join.html" class="colorme">Join Us</a></li>
 				</ul>
-				<ul class="nav navbar-nav">
-					<li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-					<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+				<ul class="nav navbar-nav navbar-right">
+						<li><a href="signup.html" class="colorme"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+						<li><a href="login.html" class="colorme"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
 				</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
 			</nav>
+			<div class="col-md-12 hidden-xs" style="padding:0px;"><img src="img/border.png" width="100%"></img></div>
+			<div class="col-xs-12 hidden-md col-sm-12 hidden-lg" style="padding:0px;"><img src="img/bordersm.png" width="100%"></img></div>
 			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" item-width="100%">
 				<!-- Indicators -->
 				<ol class="carousel-indicators">
@@ -127,46 +165,70 @@
 					<span class="sr-only">Next</span>
 				</a>
 			</div>
-			<form align="center" class="form-inline">
+			<form align="center" class="form-inline" style="padding:0px;">
 					<div class="form-group"><label for="datepicker">Tanggal Pemesanan Tiket</label>
 						<input type="text" id="datepicker" value="" class="form-control" placeholder="Tanggal">
 					</div>
 					<div class="form-group"><label for="jumlah-tiket">Jumlah Tiket</label>
 						<input type="number" id="jumlah-ticket" value="" class="form-control" placeholder="Jumlah">
 					</div>
-					<button type="submit" class="btn btn-primary">Pesan</button>
+					<button type="submit" class="btn btn-primary">Pesan</button> 
 			</form>
-			<div class="row col-xs-12 col-md-12">
-				<h1 align="center">ZONA</h1>
-			</div>
+			<h2 align="center">
+			<b>
+					Selamat Datang di Taman Lalu Lintas Bandung
+			</b>
+			</h2><br>
+			<div class="col-md-2"></div>
+			<p align="justify" class="col-md-8">YAYASAN TAMAN LALU LINTAS ADE IRMA SURYANI NASUTION BANDUNG (YTLL-AISN) mengemban dan melaksanakan Misi dan Visi dari suatu Perkumpulan Sosial bernama PERKUMPULAN BADAN KEAMANAN LALU LINTAS (BKLL) dengan STATUS Badan Hukum SK Menteri Kehakiman RI termuat dalam tambahan Berita Negara RI tgl. 12 Maret 1961 No. 21 yang berpusat diJakarta dan mempunyai cabang-cabangnya di kota-kota besar di Indonesia dn salah satunya di Bandung didirikan sekitar tahun 1951.</p><br>
+			<div class="col-md-2"></div>
+			<div class="col-md-12"></div>	<h1 align="center" style="padding:0px;" class="col-md-12">share your park story</h1>
+			<div class="col-md-12"></div>
 	<!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
 	<div class="row">
-			<div class="container col-xs-12 col-md-4">
-				<img src="img/gambar8.jpeg" alt="" class="image img-responsive">
-				<div class="middle">
-					<a href="kota.html"><div class="text"><b>Zona Kota</b></div></a>
-				</div> 
+			<div class="container col-xs-12 col-md-3">
+				<img src="img/fpic.png" alt="" class="img-responsive" style="padding-bottom:4.5%">
 			</div>
-			<div class="container col-xs-12 col-md-4">
-					<img src="img/gambar1.jpeg" alt="" class="image img-responsive">
-					<div class="middle">
-						<a href="air.html"><div class="text"><b>Zona Air</b></div></a>
-					</div>
+			<div class="container col-xs-12 col-md-3">
+				<a href="http://instagram.com" target="_blank"><img src="img/instagram-logo.png" alt="" class="img-responsive" width="70%" align="center" style="margin-left:15%"></a>
+					<h2 align="center">#bdgtraffickpark</h2>
+					<h3 align="center">share your park' moments with us on instagram!</h3>
 			</div>
-			<div class="container col-xs-12 col-md-4">
-					<img src="img/gambar4.jpeg" alt="" class="image img-responsive">
-					<div class="middle">
-						<a href="gunung.html"><div class="text"><b>Zona Gunung</b></div></a>
-					</div>
+			<div class="container col-xs-12 col-md-3">
+					<img src="img/depan.jpg" alt="" class="img-responsive" style="padding-bottom:37%">
 			</div>	
+			<div class="container col-xs-12 col-md-3">
+					<img src="img/depan1.jpg" alt="" class="img-responsive" style="padding-bottom:37%">
+			</div>
 	</div>
-	<div class="row col-xs-12 col-md-12">
-		<h1 align="center">Taman Lalu Lintas</h1>
-	</div>
-
+			
 	<div class="row">
-	<div class="col-xs-12 col-md-8"><img src="img/gambar10.jpeg" alt="" width="100%" padding="0"></div>
-	<div class="col-xs-12 col-md-4"><p class="text-justify">Taman seluas 3.5 Ha ini di dalamnya terdapat ± 1000 pohon dan banyak taman bunga, termasuk banyak pohon langka yang tetap kami rawat dan dilestarikan keberadaannya, karena begitu besar manfaatnya bagi kenyamanan lingkungan hidup dan kesehatan masyarakat Kota Bandung khususnya dan masyarakat Jawa Barat pada umumnya <a href="about.html">(read more)</a></p></div>
+		<div class="col-md-4 kotak1">
+			<h3 id="kotak">Visit the park</h3>	
+			<p id="kotak"><span class="glyphicon glyphicon-map-marker"></span>Jl. belitung no 1 bandung</p><br>
+			<div>
+                <a href="plan.html"><div class="text-bawah"><b>get direction</b></div></a>
+            </div>
+		</div>
+		<div class="col-md-4 kotak2">
+			<h3 id="kotak">contact us</h3>
+			<p id="kotak"><span class="glyphicon glyphicon-earphone"></span>+62 22 4201667 <br><span class="glyphicon glyphicon-envelope"></span>feedback@bdgtrafficpark.com</p>
+			<div>
+                <a href="kontak.html"><div class="text-bawah"><b style="color:#CFD06C">submit an enquiry</b></div></a>
+            </div>
+		</div>
+		<div class="col-md-4 kotak3">
+			<h3 id="kotak">connect with us</h3>
+			<p align="center">
+				<img src="img/instagram.png" class="img-responsive icon">
+				<img src="img/facebook.png" class="img-responsive icon">
+				<img src="img/twitter.png" class="img-responsive icon">
+				<img src="img/youtube.png" class="img-responsive icon">
+			</p>
+			<div>
+			<a href="#"><div class="text-bawah"><b style="color:#9EC7BC">join our newsletter</b></div></a>
+			</div>
+		</div>
 	</div>
 	<div id="footer" class="col-xs-12">
 		Copyright &copy; 2017 - Muhammad Faisal Al Fauzi. All right reserved
@@ -195,27 +257,6 @@
 							
 						}
 				});
-		});
-		
-		
-			</script>
-			<script>
-					// When the user scrolls down 20px from the top of the document, show the button
-					window.onscroll = function() {scrollFunction()};
-					
-					function scrollFunction() {
-						if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-							document.getElementById("myBtn").style.display = "block";
-						} else {
-							document.getElementById("myBtn").style.display = "none";
-						}
-					}
-					
-					// When the user clicks on the button, scroll to the top of the document
-					function topFunction() {
-						document.body.scrollTop = 0;
-						document.documentElement.scrollTop = 0;
-					}
-					</script>
+		});</script>
 		</body>
 	</html>

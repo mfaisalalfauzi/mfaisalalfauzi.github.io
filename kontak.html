@@ -1,63 +1,117 @@
 <!DOCTYPE html>
-<!-- belajar bikin web -->
-<html>
-	<head>
-		<title>Taman Lalu Lintas</title>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Taman Lalu Lintas</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <style>
+        label{
+          margin-left: 10px;
+        }
+        
+        .form-group{
+          width: 100%
+        }
+        @font-face{
+                  font-family: "Mohave";
+                  src: url('MOHAVE.OTF');
+            }
+            .cust-navbar{
+                 font-family: "Mohave";
+                  background: #DCDDDD;
+                  border: 0;
+                
+            }
+            .colorme{
+                color: white;
+                height: 55px;
+            }
+            @media (min-width: 768px) {
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+    
+}
+.navbar-default .navbar-nav>li>a{
+    background-color: #cbd6b6;
+    color: white;
+}
+.navbar-default .navbar-nav > .active >a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+    background-color: #99c140 !important;
+    color: white;
+    background-image: none;
+}
 
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-		<link rel="stylesheet" href="css/themes.css">
-		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-		<style>
-		label{
-			margin-left: 10px;
-		}
-		
-		.form-group{
-			width: 100%
-		}
-		</style>
-	</head>
+.navbar .navbar-collapse {
+    text-align: center;
+    
+}
+ .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: #99c140;
+    color: white;
+}
 
-	<!-- css
-		1.inline: langsung pada tag
-		2.internal: file html yang sama
-		3.external: file css sendiri
-	-->
-
-	<body> 
-		<!--menu website-->
-	<nav class="navbar navbar-inverse" style="margin-bottom:0px;">
-		<div class="container-fluid">
-		<!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-			<span class="sr-only">Toggle navigation</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand" href="index.html">Taman Lalu Lintas</a>
-		</div>
-	
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav">
-			<li><a href="index.html">Home</a></li>
-			<li><a href="event.html">Event</a></li>
-				<li><a href="about.html">About</a></li>
-				<li class="active"><a href="kontak.html">Contact<span class="sr-only">(current)</span></a></li>
-			</ul>
-			<ul class="nav navbar-nav navbar-right">
-					<li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-					<li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-			</ul>
-			</div><!-- /.navbar-collapse -->
-		</div><!-- /.container-fluid -->
-		</nav>
+}
+        </style>
+</head>
+        <!--menu website-->
+        <nav class="navbar cust-navbar navbar-default" style="margin-bottom:0px;">
+            <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>				
+            </div>
+        <style>
+            .navbar-default .navbar-toggle{
+                background-color: #99c140;
+            }
+        .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+        background-color: #DCDDDD;
+    }
+    .navbar-default .navbar-nav>li>a{
+        background-color: #cbd6b6;
+    }
+    .navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+        color: white;
+        background-color: #99c140;
+        background-image: none;
+    }
+    .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+        color: white;
+        background-color: #99c140;
+    }
+    </style>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html" class="colorme">Home</a></li>
+                    <li><a href="history.html" class="colorme">History</a></li>
+                    <li><a href="atraction.html" class="colorme">Atraction</a></li>
+                    <li><a href="whatson.html" class="colorme">What's On</a></li>
+                    <li><a href="plan.html" class="colorme">Plan Your Visit</a></li>
+                    <li><a href="merch.html" class="colorme">Merchandise</a></li>
+                    <li><a href="edu.html" class="colorme">Education</a></li>
+                    <li><a href="join.html" class="colorme">Join Us</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                        <li><a href="signup.html" class="colorme"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="login.html" class="colorme"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+            </nav>
 <h1 align="center">Contact Us</h1>
 <form class="form-horizontal">
 	<div class="form-group">
